@@ -182,13 +182,13 @@ def user_stats(df):
 
 def main():
     while True:
-        city, month, day = get_filters() # Done
-        df = load_data(city, month, day) # Done
+        city, month, day = get_filters()
+        df = load_data(city, month, day)
 
-        time_stats(df) # Done
-        station_stats(df) # Done - check
-        trip_duration_stats(df) # Done -check
-        user_stats(df) # Done - check
+        time_stats(df)
+        station_stats(df)
+        trip_duration_stats(df)
+        user_stats(df) 
 
         # Asks user if they would like to view raw data (5 rows at a time)
         raw_data = input('\nWould you like to view 5 rows of raw data? Enter yes or no: ').lower()
