@@ -36,7 +36,7 @@ def get_filters():
     # TO DO: get user input for day of week (all, monday, tuesday, ... sunday)
     days = ('monday', 'tuesday', 'wednesday', 'thursday', 'friday', 'saturday', 'sunday', 'all')
     while True:
-        day = input('Enter the day of week you would like to view bikeshare data for (Monday, Tuesday, Wednesday, Thursday,                 Friday, Saturday, Sunday or all): ')
+        day = input('Enter the day of week you would like to view bikeshare data for (Monday, Tuesday, Wednesday, Thursday, Friday, Saturday, Sunday or all): ')
         day = day.lower()
         if day in days:
             break
