@@ -23,10 +23,7 @@ def get_filters():
         if CITY_DATA.get(city):
             break
 
-    # Gets user input for month (all, january, february, ... , june)
-    months = ('january', 'february',
-              'march', 'april', 'may',
-              'june', 'all')
+    months = ('january', 'february', 'march', 'april', 'may', 'june', 'all')
     while True:
         month = input('Enter the month you would like to view bikeshare data for (January, February, March, April, May, June, or all): ')
         month = month.lower()
@@ -36,7 +33,7 @@ def get_filters():
     # Gets user input for day of week (all, monday, tuesday, ... sunday)
     days = ('monday', 'tuesday', 'wednesday', 'thursday', 'friday', 'saturday', 'sunday', 'all')
     while True:
-        day = input('Enter the day of week you would like to view bikeshare data for (Monday, Tuesday, Wednesday, Thursday,                 Friday, Saturday, Sunday or all): ')
+        day = input('Enter the day of week you would like to view bikeshare data for (Monday, Tuesday, Wednesday, Thursday, Friday, Saturday, Sunday or all): ')
         day = day.lower()
         if day in days:
             break
@@ -188,7 +185,7 @@ def main():
         time_stats(df)
         station_stats(df)
         trip_duration_stats(df)
-        user_stats(df) 
+        user_stats(df)
 
         # Asks user if they would like to view raw data (5 rows at a time)
         raw_data = input('\nWould you like to view 5 rows of raw data? Enter yes or no: ').lower()
