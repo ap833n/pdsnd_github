@@ -24,9 +24,7 @@ def get_filters():
             break
 
     # TO DO: get user input for month (all, january, february, ... , june)
-    months = ('january', 'february',
-              'march', 'april', 'may',
-              'june', 'all')
+    months = ('january', 'february', 'march', 'april', 'may', 'june', 'all')
     while True:
         month = input('Enter the month you would like to view bikeshare data for (January, February, March, April, May, June, or all): ')
         month = month.lower()
